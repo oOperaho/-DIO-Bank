@@ -43,6 +43,17 @@ namespace Bank
 				Console.WriteLine("Obrigado por utilizar o Bank!");
 				Console.ReadLine();
 			}
+			private static void Sacar()
+			{
+				Console.Write("Digite o número da conta: ");
+				int accIndex = int.Parse(Console.ReadLine());
+
+				Console.Write("Digite o valor a ser sacado: ");
+				double pickValue = double.Parse(Console.ReadLine());
+
+				listAcc[accIndex].Pick(pickValue);
+			}
+
 
 			private static void Depositar()
 			{
@@ -55,17 +66,6 @@ namespace Bank
 				listAcc[accIndex].Depositar(valorDeposito);
 			}
 
-			private static void Sacar()
-			{
-				Console.Write("Digite o número da conta: ");
-				int accIndex = int.Parse(Console.ReadLine());
-
-				Console.Write("Digite o valor a ser sacado: ");
-				double pickValue = double.Parse(Console.ReadLine());
-
-				listAcc[accIndex].Pick(pickValue);
-			}
-
 			private static void Transferir()
 			{
 				Console.Write("Digite o número da conta de origem: ");
@@ -76,9 +76,11 @@ namespace Bank
 
 				Console.Write("Digite o valor a ser transferido: ");
 				double valorTransferencia = double.Parse(Console.ReadLine());
-
+	
 				listAcc[indiceContaOrigem].Transferir(valorTransferencia, listAcc[indiceContaDestino]);
 			}
+
+
 
 			private static void InserirConta()
 			{
