@@ -1,3 +1,3 @@
 # [DIO]
 
-Aplicação de console simples para transferências bancárias
+Aplicação de console simples para transferências bancárias.
