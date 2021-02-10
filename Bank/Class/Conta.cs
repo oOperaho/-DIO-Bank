@@ -11,12 +11,12 @@ namespace Bank
         private double Credit { get; set; }
         private double Balance { get; set; }
 
-        public Conta(AccountType accountType, double Balance, double Credit, string Name)
+        public Conta(AccountType accountType, double balance, double credit, string name)
         {
             this.AccountType = accountType;
-            this.Balance = Balance;
-            this.Credit = Credit;
-            this.Name = Name;
+            this.Balance = balance;
+            this.Credit = credit;
+            this.Name = name;
         }
 
         public bool Pick(double pickValue)
