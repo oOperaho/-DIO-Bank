@@ -29,7 +29,7 @@ namespace Bank
 						case "5":
 							Depositar();
 							break;
-						case "C":
+						case "L":
 							Console.Clear();
 							break;
 
@@ -40,7 +40,7 @@ namespace Bank
 					userOption = GetUserOption();
 				}
 
-				Console.WriteLine("Obrigado por utilizar nossos serviços.");
+				Console.WriteLine("Obrigado por utilizar o Bank!");
 				Console.ReadLine();
 			}
 
@@ -84,7 +84,7 @@ namespace Bank
 			{
 				Console.WriteLine("Inserir nova conta");
 
-				Console.Write("Digite 1 para Conta Fisica ou 2 para Juridica: ");
+				Console.Write("Digite 1 para Conta Fisica ou 2 para Conta Juridica: ");
 				int entradaTipoConta = int.Parse(Console.ReadLine());
 
 				Console.Write("Digite o Nome do Cliente: ");
@@ -123,15 +123,15 @@ namespace Bank
 			private static string GetUserOption()
 			{
 				Console.WriteLine();
-				Console.WriteLine("DIO Bank a seu dispor!!!");
+				Console.WriteLine("Bank Online!");
+				Console.WriteLine();
 				Console.WriteLine("Informe a opção desejada:");
-
 				Console.WriteLine("1- Listar contas");
 				Console.WriteLine("2- Inserir nova conta");
 				Console.WriteLine("3- Transferir");
 				Console.WriteLine("4- Sacar");
 				Console.WriteLine("5- Depositar");
-				Console.WriteLine("C- Limpar Tela");
+				Console.WriteLine("L- Limpar Tela");
 				Console.WriteLine("X- Sair");
 				Console.WriteLine();
 
