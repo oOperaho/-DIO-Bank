@@ -96,12 +96,10 @@ namespace Bank
 				Console.Write("Digite o crédito: ");
 				double entradaCredito = double.Parse(Console.ReadLine());
 
-				Conta novaConta = new Conta(accountType: (AccountType,
-											saldo: entradaSaldo,
-											credito: entradaCredito,
-											nome: entradaNome);
+				Conta novaConta = new Conta(accountType: (AccountType)entradaTipoConta, balance: entradaSaldo, credit: entradaCredito, name: entradaNome);
 
-				listAcc.Add(novaConta);
+
+                listAcc.Add(novaConta);
 			}
 
 			private static void ListarContas()
