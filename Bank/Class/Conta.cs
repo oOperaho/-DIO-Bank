@@ -21,7 +21,7 @@ namespace Bank
 
         public bool Pick(double pickValue)
         {
-            if (this.Pick - pickValue < (this.Credit * -1))
+            if (this.Balance - pickValue < (this.Credit * -1))
             {
                 Console.WriteLine("Saldo insuficiente.");
                 return false;
